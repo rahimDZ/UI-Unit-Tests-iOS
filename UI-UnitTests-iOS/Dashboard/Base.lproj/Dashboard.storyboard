@@ -29,7 +29,7 @@
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="DashboardViewController" customModule="UI_UnitTests_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                         <rect key="frame" x="0.0" y="130" width="55" height="30"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
-                                            <segue destination="vKG-RX-tX0" kind="show" identifier="SignUpSegueIdentifier" id="Ci5-sw-Vf6"/>
+                                            <action selector="signUpDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mnw-9b-LmV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -70,18 +70,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="f1x-Lb-Uwe"/>
+                    <connections>
+                        <outlet property="signInButton" destination="fcZ-ae-EwF" id="x5c-er-NNd"/>
+                        <outlet property="signUpButton" destination="Gcg-Ot-sKD" id="Qag-gk-xQh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-156" y="209"/>
-        </scene>
-        <!--SignUp-->
-        <scene sceneID="H9b-8o-6il">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SignUp" id="vKG-RX-tX0" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HfK-s2-9VV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="542" y="413"/>
         </scene>
         <!--Login-->
         <scene sceneID="rMP-xR-FyE">

@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fda-aa-G3f"/>
                     </view>
-                    <navigationItem key="navigationItem" id="inN-ZN-qTT"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="inN-ZN-qTT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66j-nM-lhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

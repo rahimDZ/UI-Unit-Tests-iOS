@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "Gcg-Ot-sKD"; */
+"Gcg-Ot-sKD.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "UI-UnitTests-iOS"; ObjectID = "Pkk-kD-v1W"; */
+"Pkk-kD-v1W.text" = "UI-UnitTests-iOS";
+
+/* Class = "UINavigationItem"; title = "Welcome"; ObjectID = "f1x-Lb-Uwe"; */
+"f1x-Lb-Uwe.title" = "Welcome";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "fcZ-ae-EwF"; */
+"fcZ-ae-EwF.normalTitle" = "Sign In";
