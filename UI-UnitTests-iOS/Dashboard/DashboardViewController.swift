@@ -12,9 +12,16 @@ open class DashboardViewController: UIViewController {
     
     // MARK: - Outlets
     
+    @IBOutlet fileprivate(set) weak var welcomeTitleLabel: UILabel?
+    @IBOutlet fileprivate(set) weak var welcomeTitleTopConstraint: NSLayoutConstraint?
+    @IBOutlet fileprivate(set) weak var welcomeTitleHorizontalCenterConstraints: NSLayoutConstraint?
+    
     @IBOutlet fileprivate(set) weak var signInButton: UIButton?
     @IBOutlet fileprivate(set) weak var signUpButton: UIButton?
-    
+    @IBOutlet fileprivate(set) weak var signInSignUpStackView: UIStackView?
+    @IBOutlet fileprivate(set) weak var signInSignUpHorizontalCenterConstraint: NSLayoutConstraint?
+    @IBOutlet fileprivate(set) weak var signInSignUpVerticalCenterConstraint: NSLayoutConstraint?
+
     // MARK: - Life Cycle
 
     override open func viewDidLoad() {
@@ -40,8 +47,6 @@ open class DashboardViewController: UIViewController {
     
     @IBAction func signUpDidTouchUpInside(_ sender: UIButton) {
         let signUpStoryboard = UIStoryboard(name: "SignUp", bundle: Bundle.main)
-        if let signUpViewController = signUpStoryboard.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController {
-            self.navigationController?.pushViewController(signUpViewController, animated: true)
-        }
+        self.navigationController?.pushViewController(signUpStoryboard.instantiateViewController(withIdentifier: "SignUpViewController"), animated: false)
     }
 }

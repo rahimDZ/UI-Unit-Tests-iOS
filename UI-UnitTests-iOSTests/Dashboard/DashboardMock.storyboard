@@ -72,7 +72,13 @@
                     <navigationItem key="navigationItem" title="Welcome" id="f1x-Lb-Uwe"/>
                     <connections>
                         <outlet property="signInButton" destination="fcZ-ae-EwF" id="x5c-er-NNd"/>
+                        <outlet property="signInSignUpHorizontalCenterConstraint" destination="3vG-up-jTb" id="Wxh-rr-41i"/>
+                        <outlet property="signInSignUpStackView" destination="bEF-RI-1ZZ" id="wr8-SF-PS5"/>
+                        <outlet property="signInSignUpVerticalCenterConstraint" destination="ULu-bv-4GC" id="zWo-hc-pep"/>
                         <outlet property="signUpButton" destination="Gcg-Ot-sKD" id="Qag-gk-xQh"/>
+                        <outlet property="welcomeTitleHorizontalCenterConstraints" destination="0AA-Fz-bi4" id="HqN-hh-IkJ"/>
+                        <outlet property="welcomeTitleLabel" destination="Pkk-kD-v1W" id="6I1-qa-eoy"/>
+                        <outlet property="welcomeTitleTopConstraint" destination="tfi-VX-YBc" id="cLH-7G-4dW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
