@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		31930320F7C13C59342E597E /* Pods_UI_UnitTests_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F2561C055BC4351631FCDE /* Pods_UI_UnitTests_iOSTests.framework */; };
 		340D82EB99D0B98F4AEAC250 /* Pods_UI_UnitTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A0E0209E0545E11743B28F /* Pods_UI_UnitTests_iOS.framework */; };
+		AC143DDE2030A3EB00C2C6FF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143DDD2030A3EB00C2C6FF /* UIViewController+Extensions.swift */; };
+		AC143DE02030A40F00C2C6FF /* DashboardUIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143DDF2030A40F00C2C6FF /* DashboardUIElementsTests.swift */; };
+		AC143DE22030A43200C2C6FF /* DashboardUIBehaviorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143DE12030A43200C2C6FF /* DashboardUIBehaviorsTests.swift */; };
 		AC3364D42015306100966595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3364D32015306100966595 /* AppDelegate.swift */; };
 		AC3364D92015306100966595 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364D72015306100966595 /* Dashboard.storyboard */; };
 		AC3364DB2015306100966595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3364DA2015306100966595 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		5B8DFA83B0494D6E658EB8DD /* Pods-UI-UnitTests-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI-UnitTests-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI-UnitTests-iOSTests/Pods-UI-UnitTests-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		80A0E0209E0545E11743B28F /* Pods_UI_UnitTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI_UnitTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E5C5651EE37088575D9531 /* Pods-UI-UnitTests-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI-UnitTests-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI-UnitTests-iOSTests/Pods-UI-UnitTests-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC143DDD2030A3EB00C2C6FF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		AC143DDF2030A40F00C2C6FF /* DashboardUIElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUIElementsTests.swift; sourceTree = "<group>"; };
+		AC143DE12030A43200C2C6FF /* DashboardUIBehaviorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUIBehaviorsTests.swift; sourceTree = "<group>"; };
 		AC3364D02015306100966595 /* UI-UnitTests-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI-UnitTests-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3364D32015306100966595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3364D82015306100966595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
@@ -98,6 +104,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC143DDC2030A3DC00C2C6FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC143DDD2030A3EB00C2C6FF /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AC3364C72015306100966595 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +135,7 @@
 		AC3364D22015306100966595 /* UI-UnitTests-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AC143DDC2030A3DC00C2C6FF /* Extensions */,
 				AC33650F2015385E00966595 /* Dashboard */,
 				AC3364FE201532B600966595 /* Calculator */,
 				AC3364F52015308800966595 /* About */,
@@ -202,6 +217,8 @@
 			children = (
 				AC336513201538F300966595 /* DashboardMock.storyboard */,
 				AC3365192015393200966595 /* DashboardViewControllerMock.swift */,
+				AC143DE12030A43200C2C6FF /* DashboardUIBehaviorsTests.swift */,
+				AC143DDF2030A40F00C2C6FF /* DashboardUIElementsTests.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -461,6 +478,7 @@
 			files = (
 				AC3364FB201530B800966595 /* AboutViewController.swift in Sources */,
 				AC336504201532EA00966595 /* CalculatorViewController.swift in Sources */,
+				AC143DDE2030A3EB00C2C6FF /* UIViewController+Extensions.swift in Sources */,
 				AC3364D42015306100966595 /* AppDelegate.swift in Sources */,
 				AC336511201538B000966595 /* DashboardViewController.swift in Sources */,
 			);
@@ -470,6 +488,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC143DE22030A43200C2C6FF /* DashboardUIBehaviorsTests.swift in Sources */,
+				AC143DE02030A40F00C2C6FF /* DashboardUIElementsTests.swift in Sources */,
 				AC352C472015FE2E00FE3FAC /* CalculatorViewControllerMock.swift in Sources */,
 				AC3365082015343B00966595 /* AboutViewControllerMock.swift in Sources */,
 				AC3364E92015306100966595 /* UI_UnitTests_iOSTests.swift in Sources */,
