@@ -22,31 +22,10 @@ open class DashboardViewController: UIViewController {
     @IBOutlet fileprivate(set) weak var signInSignUpHorizontalCenterConstraint: NSLayoutConstraint?
     @IBOutlet fileprivate(set) weak var signInSignUpVerticalCenterConstraint: NSLayoutConstraint?
 
-    // MARK: - Life Cycle
-
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override open func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override open func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    
     // MARK: - Actions
     
     @IBAction func signUpDidTouchUpInside(_ sender: UIButton) {
-        let signUpStoryboard = UIStoryboard(name: "SignUp", bundle: Bundle.main)
-        self.navigationController?.pushViewController(signUpStoryboard.instantiateViewController(withIdentifier: "SignUpViewController"), animated: false)
+        let signUpStoryboard = UIStoryboard(name: "SignUp", bundle: Bundle(for: DashboardViewController.self))
+        self.navigationController?.pushViewController(signUpStoryboard.instantiateViewController(withIdentifier: "SignUpViewController"), animated: true)
     }
 }

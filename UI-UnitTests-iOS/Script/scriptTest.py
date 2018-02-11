@@ -25,8 +25,9 @@ customClass = ""
 
 # Need to Update the current enum to add your viewControllers to be mocked and launch `updateStoryboardForModule`
 class ModulesNames(Enum):
-    Dashboard = ["DashboardViewController"]
+    Dashboard = ["DashboardViewController", "Login"]
     Login = ["LoginViewController"]
+    SignUp = ["SignUpViewController"]
 
     def getKey(self):
         return self.name
@@ -51,9 +52,14 @@ def updateStoryboardForModule(module):
         for line in infile2:
             appendLine = True
             for storyboardIdentifier in module.value:
-                if contains(storyboardIdentifier, line) and (contains("storyboardIdentifier", line) or contains("customClass", line)):
+                storyboardIdentifierStrict = "\""+storyboardIdentifier+"\""
+                if contains("storyboardName", line) and contains(storyboardIdentifierStrict, line):
                     appendLine = False
-                    clearedLine += line.replace(storyboardIdentifier, storyboardIdentifier+"Mock").replace("customModule=\""+targetName+"\"", "customModule=\""+targetName+"Tests\"")
+                    clearedLine += line.replace(storyboardIdentifier, storyboardIdentifier+"Mock")
+                else:
+                    if contains(storyboardIdentifierStrict, line) and (contains("storyboardIdentifier", line) or contains("customClass", line)):
+                        appendLine = False
+                        clearedLine += line.replace(storyboardIdentifier, storyboardIdentifier+"Mock").replace("customModule=\""+targetName+"\"", "customModule=\""+targetName+"Tests\"")
             if appendLine:
                 clearedLine += line
     open(destinationPath, 'w').close()
@@ -66,4 +72,7 @@ updateStoryboardForModule(ModulesNames.Dashboard)
 
 print "Login module refreshing..."
 updateStoryboardForModule(ModulesNames.Login)
+
+print "SignUp module refreshing..."
+updateStoryboardForModule(ModulesNames.SignUp)
 

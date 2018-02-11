@@ -21,15 +21,11 @@
 		AC336504201532EA00966595 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC336503201532EA00966595 /* SignUpViewController.swift */; };
 		AC336506201533A200966595 /* scriptTest.py in Resources */ = {isa = PBXBuildFile; fileRef = AC336505201533A200966595 /* scriptTest.py */; };
 		AC3365082015343B00966595 /* LoginViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3365072015343B00966595 /* LoginViewControllerMock.swift */; };
-		AC3365092015344000966595 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC336503201532EA00966595 /* SignUpViewController.swift */; };
-		AC33650A2015344000966595 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364FF201532BE00966595 /* SignUp.storyboard */; };
-		AC33650B2015344000966595 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3364FA201530B800966595 /* LoginViewController.swift */; };
-		AC33650C2015344000966595 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364FC201530BE00966595 /* Login.storyboard */; };
 		AC336511201538B000966595 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC336510201538B000966595 /* DashboardViewController.swift */; };
 		AC336514201538F300966595 /* DashboardMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC336513201538F300966595 /* DashboardMock.storyboard */; };
-		AC3365152015391200966595 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC336510201538B000966595 /* DashboardViewController.swift */; };
-		AC3365162015391600966595 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364D72015306100966595 /* Dashboard.storyboard */; };
 		AC33651A2015393200966595 /* DashboardViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3365192015393200966595 /* DashboardViewControllerMock.swift */; };
+		AC352C452015FDD900FE3FAC /* SignUpMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC352C442015FDD900FE3FAC /* SignUpMock.storyboard */; };
+		AC352C472015FE2E00FE3FAC /* SignUpViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC352C462015FE2E00FE3FAC /* SignUpViewControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +65,8 @@
 		AC336513201538F300966595 /* DashboardMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardMock.storyboard; sourceTree = "<group>"; };
 		AC3365182015391700966595 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Dashboard.strings; sourceTree = "<group>"; };
 		AC3365192015393200966595 /* DashboardViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerMock.swift; sourceTree = "<group>"; };
+		AC352C442015FDD900FE3FAC /* SignUpMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpMock.storyboard; sourceTree = "<group>"; };
+		AC352C462015FE2E00FE3FAC /* SignUpViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +136,7 @@
 		AC3364E72015306100966595 /* UI-UnitTests-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC352C432015FDC800FE3FAC /* SignUp */,
 				AC336512201538E300966595 /* Dashboard */,
 				AC3364F62015309000966595 /* Login */,
 				AC3364E82015306100966595 /* UI_UnitTests_iOSTests.swift */,
@@ -205,6 +204,15 @@
 				AC3365192015393200966595 /* DashboardViewControllerMock.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		AC352C432015FDC800FE3FAC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AC352C442015FDD900FE3FAC /* SignUpMock.storyboard */,
+				AC352C462015FE2E00FE3FAC /* SignUpViewControllerMock.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		B81CAAAF6382D5FD037941CC /* Pods */ = {
@@ -321,11 +329,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC33650A2015344000966595 /* SignUp.storyboard in Resources */,
-				AC3365162015391600966595 /* Dashboard.storyboard in Resources */,
+				AC352C452015FDD900FE3FAC /* SignUpMock.storyboard in Resources */,
 				AC336514201538F300966595 /* DashboardMock.storyboard in Resources */,
 				AC3364F82015309700966595 /* LoginMock.storyboard in Resources */,
-				AC33650C2015344000966595 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,9 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC33650B2015344000966595 /* LoginViewController.swift in Sources */,
-				AC3365092015344000966595 /* SignUpViewController.swift in Sources */,
-				AC3365152015391200966595 /* DashboardViewController.swift in Sources */,
+				AC352C472015FE2E00FE3FAC /* SignUpViewControllerMock.swift in Sources */,
 				AC3365082015343B00966595 /* LoginViewControllerMock.swift in Sources */,
 				AC3364E92015306100966595 /* UI_UnitTests_iOSTests.swift in Sources */,
 				AC33651A2015393200966595 /* DashboardViewControllerMock.swift in Sources */,
