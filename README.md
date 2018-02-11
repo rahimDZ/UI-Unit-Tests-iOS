@@ -41,4 +41,10 @@ After that, you need to go to your target Build phase and add a new "run script"
 ![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/build_phase_run_script.png)
 
 
+## Credits
 
+The [generator script](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/UI-UnitTests-iOS/Script/scriptTest.py) and its content is owned and maintained by [me](https://github.com/rahimDZ). You can contact me on my email: [abderrahim.benmakhlouf@gmail.com](abderrahim.benmakhlouf@gmail.com).
+
+## License
+
+The [generator script](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/UI-UnitTests-iOS/Script/scriptTest.py) and its content is released under the MIT license. [See LICENSE](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/LICENSE) for details.
