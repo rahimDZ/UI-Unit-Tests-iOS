@@ -1,2 +1,3 @@
-# UI-Unit-Tests-iOS
-Generator storyboard with mocked viewcontroller to be able to unit test the UI by the UI only (Mocked Business Logic)
+# UI UnitTests iOS
+A new way to test your UI very quicly with unit tests by mocking the Business logic.
+This new way use a storyboard generator that mock the storyboard and replacing a mocked viewcontroller that inherit from the viewcontroller that you want to test.
