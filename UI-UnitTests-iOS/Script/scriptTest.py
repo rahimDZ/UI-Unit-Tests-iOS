@@ -23,15 +23,6 @@ def contains(subText, fullText):
 storyboardIdentifier = ""
 customClass = ""
 
-# Need to Update the current enum to add your viewControllers to be mocked and launch `updateStoryboardForModule`
-class ModulesNames(Enum):
-    Dashboard = ["DashboardViewController", "Calculator"]
-    Calculator = ["CalculatorViewController"]
-    About = ["AboutViewController"]
-
-    def getKey(self):
-        return self.name
-
 def getPathOf(fileName):
     for r,d,f in os.walk(fullPath):
         for files in f:
@@ -66,6 +57,16 @@ def updateStoryboardForModule(module):
     with open(destinationPath, "a") as f:
         f.write(clearedLine)
     print "Refreshing "+moduleName+" completed!"
+
+
+# Need to Update the current enum to add your viewControllers to be mocked and launch `updateStoryboardForModule`
+class ModulesNames(Enum):
+    Dashboard = ["DashboardViewController", "Calculator"]
+    Calculator = ["CalculatorViewController"]
+    About = ["AboutViewController"]
+    
+    def getKey(self):
+        return self.name
 
 print "Dashboard module refreshing..."
 updateStoryboardForModule(ModulesNames.Dashboard)
