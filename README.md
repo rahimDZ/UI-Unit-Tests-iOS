@@ -48,21 +48,23 @@ After that, you need to go to your target Build phase and add a new "run script"
 
 Here we will see how to use the script generator to mock for instance here the `Dashboard`.
 
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART1.png)
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART1.png" width="300">
+
 
 ⚠️⚠️⚠️ On the Unit Test folder/Target (and not the UI Tests folder/Target) ⚠️⚠️⚠️
 
 1. Create Folder `Dashboard`
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART2.png)
+
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART2.png" width="300">
 
 2. On this Folder create an empty Storyboard with the same name as the storyboard that we want to "Mock", in our case `DashboardMock.storyboard`
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART3.png)
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART3.png" width="300">
 
 3. Create a `Cocoa Touch Class` file that will be a subclass of your controller, in our case is a subclass of `DashboardViewController` and the file name will be like `DashboardViewControllerMock.swift`
 ⚠️⚠️⚠️ Don't forget to add `@testable import YOUR_TARGET_NAME` to all your future mocked controllers ⚠️⚠️⚠️
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART4.png)
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART5.png)
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART6.png)
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART4.png" width="300">
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART5.png" width="300">
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART6.png" width="300">
 
 4. Update on the Enum on the [script generator](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/UI-UnitTests-iOS/Script/scriptTest.py) by adding the folder name associated to an array of strings corresponding to the controllers and storyboard references inside the storyboard (because a storyboard can have multiple views and storyboard references).
 
@@ -78,23 +80,23 @@ class ModulesNames(Enum):
 
 In our case, we will add the `Dashboard` folder and we need to mock the `DashboardViewController` and the `Calculator` storyboard reference.
 
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART7.png)
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART7.png" width="300">
 
 ⚠️⚠️⚠️ Don't forget to call the function `updateStoryboardForModule(ModulesNames.YOUR_FOLDER_NAME)` ⚠️⚠️⚠️
 
 Now, we need to call `updateStoryboardForModule(ModulesNames.Dashboard)` to be able to run the script function for the `Dashboard` folder.
 
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART8.png)
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART8.png" width="300">
 
 
 5. If we go back to our empty `DashboardMock.storyboard` file, we check that it's really empty:
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART9.png)
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART9.png" width="300">
 
 Now Launch a simple build (⌘ + B), it will launch automatically the script generator, because we already add a "run script" on the target "Build Phases".
 
 Our empty `DashboardMock.storyboard` file is already updated with the content of the `Dashboard.storyboard` file and also mocked as we describe in the Enum in the script.
 
-![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART10.png)
+<img src="https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/PART10.png" width="300">
 
 ## Credits
 
