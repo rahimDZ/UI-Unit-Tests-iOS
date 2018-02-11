@@ -16,16 +16,16 @@ open class DashboardViewController: UIViewController {
     @IBOutlet fileprivate(set) weak var welcomeTitleTopConstraint: NSLayoutConstraint?
     @IBOutlet fileprivate(set) weak var welcomeTitleHorizontalCenterConstraints: NSLayoutConstraint?
     
-    @IBOutlet fileprivate(set) weak var signInButton: UIButton?
-    @IBOutlet fileprivate(set) weak var signUpButton: UIButton?
-    @IBOutlet fileprivate(set) weak var signInSignUpStackView: UIStackView?
-    @IBOutlet fileprivate(set) weak var signInSignUpHorizontalCenterConstraint: NSLayoutConstraint?
-    @IBOutlet fileprivate(set) weak var signInSignUpVerticalCenterConstraint: NSLayoutConstraint?
+    @IBOutlet fileprivate(set) weak var aboutButton: UIButton?
+    @IBOutlet fileprivate(set) weak var calculatorButton: UIButton?
+    @IBOutlet fileprivate(set) weak var aboutStackView: UIStackView?
+    @IBOutlet fileprivate(set) weak var aboutHorizontalCenterConstraint: NSLayoutConstraint?
+    @IBOutlet fileprivate(set) weak var aboutVerticalCenterConstraint: NSLayoutConstraint?
 
     // MARK: - Actions
     
-    @IBAction func signUpDidTouchUpInside(_ sender: UIButton) {
-        let signUpStoryboard = UIStoryboard(name: "SignUp", bundle: Bundle(for: DashboardViewController.self))
-        self.navigationController?.pushViewController(signUpStoryboard.instantiateViewController(withIdentifier: "SignUpViewController"), animated: true)
+    @IBAction func aboutDidTouchUpInside(_ sender: UIButton) {
+        let aboutStoryboard = UIStoryboard(name: "About", bundle: Bundle(for: DashboardViewController.self))
+        self.navigationController?.pushViewController(aboutStoryboard.instantiateViewController(withIdentifier: "AboutViewController"), animated: true)
     }
 }

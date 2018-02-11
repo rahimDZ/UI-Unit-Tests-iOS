@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  CalculatorViewController.swift
 //  UI-UnitTests-iOS
 //
 //  Created by Abderrahim BENMAKHLOUF on 21/01/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class CalculatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,9 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func dismissDidTouchUpInside(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

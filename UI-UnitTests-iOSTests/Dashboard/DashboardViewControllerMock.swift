@@ -16,13 +16,13 @@ import UIKit
 class DashboardViewControllerMock: DashboardViewController {
     
     public var didDisplaysLoginViewController: Bool = false
-    public var loginViewController: UIViewController? = nil
+    public var calculatorViewController: UIViewController? = nil
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if segue.identifier == "LoginSegueIdentifier" {
+        if segue.identifier == "CalculatorSegueIdentifier" {
             didDisplaysLoginViewController = true
-            loginViewController = segue.destination
+            calculatorViewController = segue.destination
         }
     }
 }
@@ -70,11 +70,11 @@ final class DashboardUITests: QuickSpec {
                 }
                 context("the Sign In / Sign Up stackView") {
                     it("should have valid constraints") {
-                        expect(self.dashboardViewControllerMock?.signInSignUpHorizontalCenterConstraint?.constant).toEventually(equal(0.0))
-                        expect(self.dashboardViewControllerMock?.signInSignUpVerticalCenterConstraint?.constant).toEventually(equal(0.0))
+                        expect(self.dashboardViewControllerMock?.aboutHorizontalCenterConstraint?.constant).toEventually(equal(0.0))
+                        expect(self.dashboardViewControllerMock?.aboutVerticalCenterConstraint?.constant).toEventually(equal(0.0))
                     }
                     it("should have valid spacings") {
-                        expect(self.dashboardViewControllerMock?.signInSignUpStackView?.spacing).toEventually(equal(100.0))
+                        expect(self.dashboardViewControllerMock?.aboutStackView?.spacing).toEventually(equal(100.0))
                     }
                 }
             }
@@ -105,28 +105,28 @@ final class DashboardUIBehaviorsTests: QuickSpec {
                 self.navigationController = UINavigationController(rootViewController: self.dashboardViewControllerMock!)
             }
             // from segue on storyboard
-            context("And the user clicks on the Sign In Button") {
+            context("And the user clicks on the Calculator Button") {
                 beforeEach {
-                    self.dashboardViewControllerMock?.signInButton?.sendActions(for: .touchUpInside)
+                    self.dashboardViewControllerMock?.calculatorButton?.sendActions(for: .touchUpInside)
                 }
-                it("should display Login page") {
+                it("should display Calculator page") {
                     expect(self.dashboardViewControllerMock?.didDisplaysLoginViewController).toEventually(beTrue())
-                    expect(self.dashboardViewControllerMock?.loginViewController).toNotEventually(beNil())
+                    expect(self.dashboardViewControllerMock?.calculatorViewController).toNotEventually(beNil())
                 }
-                it("should display Login page with modal presentation") {
-                    expect(self.dashboardViewControllerMock?.loginViewController?.modalPresentationStyle).toEventually(equal(UIModalPresentationStyle.fullScreen))
+                it("should display Calculator page with modal presentation") {
+                    expect(self.dashboardViewControllerMock?.calculatorViewController?.modalPresentationStyle).toEventually(equal(UIModalPresentationStyle.fullScreen))
                 }
-                it("should diplay login page with cross disolve transition style") {
-                    expect(self.dashboardViewControllerMock?.loginViewController?.modalTransitionStyle).toEventually(equal(UIModalTransitionStyle.crossDissolve))
+                it("should diplay Calculator page with cross disolve transition style") {
+                    expect(self.dashboardViewControllerMock?.calculatorViewController?.modalTransitionStyle).toEventually(equal(UIModalTransitionStyle.crossDissolve))
                 }
             }
             // from button action programatically
-            context("And the user clicks on the Sign Up Button") {
+            context("And the user clicks on the About Button") {
                 beforeEach {
-                    self.dashboardViewControllerMock?.signUpButton?.sendActions(for: .touchUpInside)
+                    self.dashboardViewControllerMock?.aboutButton?.sendActions(for: .touchUpInside)
                 }
-                it("should display LoginViewController page") {
-                    expect((self.navigationController?.viewControllers.contains(where: { return $0 is SignUpViewController }))).toEventually(beTrue())
+                it("should display Calculator page") {
+                    expect((self.navigationController?.viewControllers.contains(where: { return $0 is AboutViewController }))).toEventually(beTrue())
                 }
             }
         }

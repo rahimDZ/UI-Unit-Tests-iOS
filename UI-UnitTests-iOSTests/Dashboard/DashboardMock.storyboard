@@ -40,20 +40,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="bEF-RI-1ZZ">
-                                <rect key="frame" x="159.5" y="285.5" width="55" height="160"/>
+                                <rect key="frame" x="152" y="285.5" width="70" height="160"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcZ-ae-EwF">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
-                                        <state key="normal" title="Sign In"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                        <state key="normal" title="Calculator"/>
                                         <connections>
-                                            <segue destination="HEa-kD-vJB" kind="presentation" identifier="LoginSegueIdentifier" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Qmp-gy-DaJ"/>
+                                            <segue destination="HEa-kD-vJB" kind="presentation" identifier="CalculatorSegueIdentifier" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VSY-Le-GK1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-Ot-sKD">
-                                        <rect key="frame" x="0.0" y="130" width="55" height="30"/>
-                                        <state key="normal" title="Sign Up"/>
+                                        <rect key="frame" x="0.0" y="130" width="70" height="30"/>
+                                        <state key="normal" title="About"/>
                                         <connections>
-                                            <action selector="signUpDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mnw-9b-LmV"/>
+                                            <action selector="aboutDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffm-qj-yCH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -76,11 +76,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="f1x-Lb-Uwe"/>
                     <connections>
-                        <outlet property="signInButton" destination="fcZ-ae-EwF" id="x5c-er-NNd"/>
-                        <outlet property="signInSignUpHorizontalCenterConstraint" destination="3vG-up-jTb" id="Wxh-rr-41i"/>
-                        <outlet property="signInSignUpStackView" destination="bEF-RI-1ZZ" id="wr8-SF-PS5"/>
-                        <outlet property="signInSignUpVerticalCenterConstraint" destination="ULu-bv-4GC" id="zWo-hc-pep"/>
-                        <outlet property="signUpButton" destination="Gcg-Ot-sKD" id="Qag-gk-xQh"/>
+                        <outlet property="aboutButton" destination="Gcg-Ot-sKD" id="BNP-xk-wEB"/>
+                        <outlet property="aboutHorizontalCenterConstraint" destination="3vG-up-jTb" id="Wxh-rr-41i"/>
+                        <outlet property="aboutStackView" destination="bEF-RI-1ZZ" id="wr8-SF-PS5"/>
+                        <outlet property="aboutVerticalCenterConstraint" destination="ULu-bv-4GC" id="zWo-hc-pep"/>
+                        <outlet property="calculatorButton" destination="fcZ-ae-EwF" id="0qu-R1-Cu1"/>
                         <outlet property="welcomeTitleHorizontalCenterConstraints" destination="0AA-Fz-bi4" id="HqN-hh-IkJ"/>
                         <outlet property="welcomeTitleLabel" destination="Pkk-kD-v1W" id="6I1-qa-eoy"/>
                         <outlet property="welcomeTitleTopConstraint" destination="tfi-VX-YBc" id="cLH-7G-4dW"/>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="-156" y="209"/>
         </scene>
-        <!--Login-->
+        <!--Calculator-->
         <scene sceneID="rMP-xR-FyE">
             <objects>
-                <viewControllerPlaceholder storyboardName="LoginMock" id="HEa-kD-vJB" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CalculatorMock" id="HEa-kD-vJB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyf-sZ-ms4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="534" y="5"/>

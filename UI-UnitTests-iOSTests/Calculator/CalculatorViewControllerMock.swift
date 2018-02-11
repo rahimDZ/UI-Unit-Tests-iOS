@@ -1,5 +1,5 @@
 //
-//  SignUpViewControllerMock.swift
+//  CalculatorViewControllerMock.swift
 //  UI-UnitTests-iOSTests
 //
 //  Created by Abderrahim BENMAKHLOUF on 22/01/2018.
@@ -9,7 +9,7 @@
 import Foundation
 @testable import UI_UnitTests_iOS
 
-class SignUpViewControllerMock: SignUpViewController {
+class CalculatorViewControllerMock: CalculatorViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

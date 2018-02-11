@@ -1,5 +1,5 @@
 //
-//  LoginViewControllerMock.swift
+//  AboutViewControllerMock.swift
 //  UI-UnitTests-iOSTests
 //
 //  Created by Abderrahim BENMAKHLOUF on 21/01/2018.
@@ -10,7 +10,7 @@ import UIKit
 
 @testable import UI_UnitTests_iOS
 
-class LoginViewControllerMock: LoginViewController {
+class AboutViewControllerMock: AboutViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

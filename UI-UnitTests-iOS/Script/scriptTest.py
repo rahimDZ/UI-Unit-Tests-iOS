@@ -25,9 +25,9 @@ customClass = ""
 
 # Need to Update the current enum to add your viewControllers to be mocked and launch `updateStoryboardForModule`
 class ModulesNames(Enum):
-    Dashboard = ["DashboardViewController", "Login"]
-    Login = ["LoginViewController"]
-    SignUp = ["SignUpViewController"]
+    Dashboard = ["DashboardViewController", "Calculator"]
+    Calculator = ["CalculatorViewController"]
+    About = ["AboutViewController"]
 
     def getKey(self):
         return self.name
@@ -70,9 +70,10 @@ def updateStoryboardForModule(module):
 print "Dashboard module refreshing..."
 updateStoryboardForModule(ModulesNames.Dashboard)
 
-print "Login module refreshing..."
-updateStoryboardForModule(ModulesNames.Login)
+print "Calculator module refreshing..."
+updateStoryboardForModule(ModulesNames.Calculator)
 
-print "SignUp module refreshing..."
-updateStoryboardForModule(ModulesNames.SignUp)
+print "About module refreshing..."
+updateStoryboardForModule(ModulesNames.About)
+
 

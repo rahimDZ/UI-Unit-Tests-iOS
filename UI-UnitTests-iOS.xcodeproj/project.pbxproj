@@ -14,18 +14,18 @@
 		AC3364DB2015306100966595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3364DA2015306100966595 /* Assets.xcassets */; };
 		AC3364DE2015306100966595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364DC2015306100966595 /* LaunchScreen.storyboard */; };
 		AC3364E92015306100966595 /* UI_UnitTests_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3364E82015306100966595 /* UI_UnitTests_iOSTests.swift */; };
-		AC3364F82015309700966595 /* LoginMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364F72015309700966595 /* LoginMock.storyboard */; };
-		AC3364FB201530B800966595 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3364FA201530B800966595 /* LoginViewController.swift */; };
-		AC3364FD201530BE00966595 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364FC201530BE00966595 /* Login.storyboard */; };
-		AC336500201532BE00966595 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364FF201532BE00966595 /* SignUp.storyboard */; };
-		AC336504201532EA00966595 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC336503201532EA00966595 /* SignUpViewController.swift */; };
+		AC3364F82015309700966595 /* AboutMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364F72015309700966595 /* AboutMock.storyboard */; };
+		AC3364FB201530B800966595 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3364FA201530B800966595 /* AboutViewController.swift */; };
+		AC3364FD201530BE00966595 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364FC201530BE00966595 /* About.storyboard */; };
+		AC336500201532BE00966595 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364FF201532BE00966595 /* Calculator.storyboard */; };
+		AC336504201532EA00966595 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC336503201532EA00966595 /* CalculatorViewController.swift */; };
 		AC336506201533A200966595 /* scriptTest.py in Resources */ = {isa = PBXBuildFile; fileRef = AC336505201533A200966595 /* scriptTest.py */; };
-		AC3365082015343B00966595 /* LoginViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3365072015343B00966595 /* LoginViewControllerMock.swift */; };
+		AC3365082015343B00966595 /* AboutViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3365072015343B00966595 /* AboutViewControllerMock.swift */; };
 		AC336511201538B000966595 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC336510201538B000966595 /* DashboardViewController.swift */; };
 		AC336514201538F300966595 /* DashboardMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC336513201538F300966595 /* DashboardMock.storyboard */; };
 		AC33651A2015393200966595 /* DashboardViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3365192015393200966595 /* DashboardViewControllerMock.swift */; };
-		AC352C452015FDD900FE3FAC /* SignUpMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC352C442015FDD900FE3FAC /* SignUpMock.storyboard */; };
-		AC352C472015FE2E00FE3FAC /* SignUpViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC352C462015FE2E00FE3FAC /* SignUpViewControllerMock.swift */; };
+		AC352C452015FDD900FE3FAC /* CalculatorMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC352C442015FDD900FE3FAC /* CalculatorMock.storyboard */; };
+		AC352C472015FE2E00FE3FAC /* CalculatorViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC352C462015FE2E00FE3FAC /* CalculatorViewControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,19 +54,19 @@
 		AC3364E42015306100966595 /* UI-UnitTests-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI-UnitTests-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3364E82015306100966595 /* UI_UnitTests_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_UnitTests_iOSTests.swift; sourceTree = "<group>"; };
 		AC3364EA2015306100966595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC3364F72015309700966595 /* LoginMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginMock.storyboard; sourceTree = "<group>"; };
-		AC3364FA201530B800966595 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AC3364FC201530BE00966595 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		AC3364FF201532BE00966595 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
-		AC336503201532EA00966595 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AC3364F72015309700966595 /* AboutMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutMock.storyboard; sourceTree = "<group>"; };
+		AC3364FA201530B800966595 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		AC3364FC201530BE00966595 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		AC3364FF201532BE00966595 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		AC336503201532EA00966595 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		AC336505201533A200966595 /* scriptTest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = scriptTest.py; sourceTree = "<group>"; };
-		AC3365072015343B00966595 /* LoginViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerMock.swift; sourceTree = "<group>"; };
+		AC3365072015343B00966595 /* AboutViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewControllerMock.swift; sourceTree = "<group>"; };
 		AC336510201538B000966595 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		AC336513201538F300966595 /* DashboardMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardMock.storyboard; sourceTree = "<group>"; };
 		AC3365182015391700966595 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Dashboard.strings; sourceTree = "<group>"; };
 		AC3365192015393200966595 /* DashboardViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerMock.swift; sourceTree = "<group>"; };
-		AC352C442015FDD900FE3FAC /* SignUpMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpMock.storyboard; sourceTree = "<group>"; };
-		AC352C462015FE2E00FE3FAC /* SignUpViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerMock.swift; sourceTree = "<group>"; };
+		AC352C442015FDD900FE3FAC /* CalculatorMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalculatorMock.storyboard; sourceTree = "<group>"; };
+		AC352C462015FE2E00FE3FAC /* CalculatorViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				AC33650F2015385E00966595 /* Dashboard */,
-				AC3364FE201532B600966595 /* SignUp */,
-				AC3364F52015308800966595 /* Login */,
+				AC3364FE201532B600966595 /* Calculator */,
+				AC3364F52015308800966595 /* About */,
 				AC3364F42015306F00966595 /* Others */,
 				AC3364F32015306800966595 /* Script */,
 				AC3364D32015306100966595 /* AppDelegate.swift */,
@@ -136,9 +136,9 @@
 		AC3364E72015306100966595 /* UI-UnitTests-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				AC352C432015FDC800FE3FAC /* SignUp */,
+				AC352C432015FDC800FE3FAC /* Calculator */,
 				AC336512201538E300966595 /* Dashboard */,
-				AC3364F62015309000966595 /* Login */,
+				AC3364F62015309000966595 /* About */,
 				AC3364E82015306100966595 /* UI_UnitTests_iOSTests.swift */,
 				AC3364EA2015306100966595 /* Info.plist */,
 			);
@@ -161,31 +161,31 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		AC3364F52015308800966595 /* Login */ = {
+		AC3364F52015308800966595 /* About */ = {
 			isa = PBXGroup;
 			children = (
-				AC3364FA201530B800966595 /* LoginViewController.swift */,
-				AC3364FC201530BE00966595 /* Login.storyboard */,
+				AC3364FA201530B800966595 /* AboutViewController.swift */,
+				AC3364FC201530BE00966595 /* About.storyboard */,
 			);
-			path = Login;
+			path = About;
 			sourceTree = "<group>";
 		};
-		AC3364F62015309000966595 /* Login */ = {
+		AC3364F62015309000966595 /* About */ = {
 			isa = PBXGroup;
 			children = (
-				AC3364F72015309700966595 /* LoginMock.storyboard */,
-				AC3365072015343B00966595 /* LoginViewControllerMock.swift */,
+				AC3364F72015309700966595 /* AboutMock.storyboard */,
+				AC3365072015343B00966595 /* AboutViewControllerMock.swift */,
 			);
-			path = Login;
+			path = About;
 			sourceTree = "<group>";
 		};
-		AC3364FE201532B600966595 /* SignUp */ = {
+		AC3364FE201532B600966595 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				AC336503201532EA00966595 /* SignUpViewController.swift */,
-				AC3364FF201532BE00966595 /* SignUp.storyboard */,
+				AC336503201532EA00966595 /* CalculatorViewController.swift */,
+				AC3364FF201532BE00966595 /* Calculator.storyboard */,
 			);
-			path = SignUp;
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		AC33650F2015385E00966595 /* Dashboard */ = {
@@ -206,13 +206,13 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
-		AC352C432015FDC800FE3FAC /* SignUp */ = {
+		AC352C432015FDC800FE3FAC /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				AC352C442015FDD900FE3FAC /* SignUpMock.storyboard */,
-				AC352C462015FE2E00FE3FAC /* SignUpViewControllerMock.swift */,
+				AC352C442015FDD900FE3FAC /* CalculatorMock.storyboard */,
+				AC352C462015FE2E00FE3FAC /* CalculatorViewControllerMock.swift */,
 			);
-			path = SignUp;
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		B81CAAAF6382D5FD037941CC /* Pods */ = {
@@ -316,12 +316,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3364FD201530BE00966595 /* Login.storyboard in Resources */,
+				AC3364FD201530BE00966595 /* About.storyboard in Resources */,
 				AC336506201533A200966595 /* scriptTest.py in Resources */,
 				AC3364DE2015306100966595 /* LaunchScreen.storyboard in Resources */,
 				AC3364DB2015306100966595 /* Assets.xcassets in Resources */,
 				AC3364D92015306100966595 /* Dashboard.storyboard in Resources */,
-				AC336500201532BE00966595 /* SignUp.storyboard in Resources */,
+				AC336500201532BE00966595 /* Calculator.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,9 +329,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC352C452015FDD900FE3FAC /* SignUpMock.storyboard in Resources */,
+				AC352C452015FDD900FE3FAC /* CalculatorMock.storyboard in Resources */,
 				AC336514201538F300966595 /* DashboardMock.storyboard in Resources */,
-				AC3364F82015309700966595 /* LoginMock.storyboard in Resources */,
+				AC3364F82015309700966595 /* AboutMock.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,8 +459,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3364FB201530B800966595 /* LoginViewController.swift in Sources */,
-				AC336504201532EA00966595 /* SignUpViewController.swift in Sources */,
+				AC3364FB201530B800966595 /* AboutViewController.swift in Sources */,
+				AC336504201532EA00966595 /* CalculatorViewController.swift in Sources */,
 				AC3364D42015306100966595 /* AppDelegate.swift in Sources */,
 				AC336511201538B000966595 /* DashboardViewController.swift in Sources */,
 			);
@@ -470,8 +470,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC352C472015FE2E00FE3FAC /* SignUpViewControllerMock.swift in Sources */,
-				AC3365082015343B00966595 /* LoginViewControllerMock.swift in Sources */,
+				AC352C472015FE2E00FE3FAC /* CalculatorViewControllerMock.swift in Sources */,
+				AC3365082015343B00966595 /* AboutViewControllerMock.swift in Sources */,
 				AC3364E92015306100966595 /* UI_UnitTests_iOSTests.swift in Sources */,
 				AC33651A2015393200966595 /* DashboardViewControllerMock.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  AboutViewController.swift
 //  UI-UnitTests-iOS
 //
 //  Created by Abderrahim BENMAKHLOUF on 21/01/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class AboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,7 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+        
     /*
     // MARK: - Navigation
 
