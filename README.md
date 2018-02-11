@@ -38,4 +38,7 @@ To be able to launch the Python script, you will have to install some dependenci
 You only need to get and drag and drop the [script generator](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/UI-UnitTests-iOS/Script/scriptTest.py) on your xcode project.
 After that, you need to go to your target Build phase and add a new "run script" and run the script like in the example : `python $PROJECT_DIR/UI-UnitTests-iOS/Script/scriptTest.py`.
 
+![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/build_phase_run_script.png)
+
+
 
