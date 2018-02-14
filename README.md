@@ -3,7 +3,7 @@ A new way to test your UI very quicly with unit tests by mocking the Business lo
 This new way use a storyboard generator that mock the storyboard and replacing a mocked viewcontroller that inherit from the viewcontroller that you want to test.
 
 - [Code Coverage](#code-coverage)
-- [Why do we need a ViewControllerMock?](#why-do-we-need-a-viewControllerMock?)
+- [Why do we need a ViewControllerMock?](#why-do-we-need-a-viewcontrollermock)
 - [Python Script Generator](#python-script-generator)
 - [Requirements](#requirements)
 - [Installation](#installation)
