@@ -25,6 +25,12 @@ The fact that those UI Tests are not using the Apple UI Tests but the simple Uni
 
 TODO
 
+- SOLID
+- Mock Business Logic Layer to test only UI
+- Have access to the outlets
+- override some methods to be able to test it like `prepareForSegue`, the display of an alert error etc...
+
+
 ## Python Script Generator
 
 ### What is this script and what it really does?
