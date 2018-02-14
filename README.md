@@ -1,13 +1,24 @@
-# # UI UnitTests iOS
+# UI UnitTests iOS
 A new way to test your UI very quicly with unit tests by mocking the Business logic.
 This new way use a storyboard generator that mock the storyboard and replacing a mocked viewcontroller that inherit from the viewcontroller that you want to test.
 
+- [Code Coverage](#code-coverage)
 - [Python Script Generator](#python-script-generator)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+
+## Code Coverage
+
+The fact that those UI Tests are not using the Apple UI Tests but the simple Unit test, it allows to gather code coverage (by using Slather) if you want to have Continuous integration and continuous deployment with Jenkins for example! That Apple UI Tests cannot retrieve it with slather but only from xCode.
+
+![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/xcode_code_coverage.png)
+![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/xcodebuild_tests.png)
+![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/xcodebuild_html_reports_tests.png)
+![alt text](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/screens/slather_code_coverage_reports_tests.png)
+
 
 ## Python Script Generator
 
