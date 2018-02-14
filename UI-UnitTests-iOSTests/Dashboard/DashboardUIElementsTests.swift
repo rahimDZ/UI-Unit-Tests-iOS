@@ -11,7 +11,7 @@ import Quick
 import Nimble
 import UIKit
 
-@testable import UI_UnitTests_iOS
+@testable import UIUnitTestsIOS
 
 final class DashboardUIElementsTests: QuickSpec {
     

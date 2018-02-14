@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@testable import UI_UnitTests_iOS
+@testable import UIUnitTestsIOS
 
 class CalculatorViewControllerMock: CalculatorViewController {
     

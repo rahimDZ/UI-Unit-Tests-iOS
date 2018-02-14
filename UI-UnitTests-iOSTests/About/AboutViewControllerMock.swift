@@ -8,7 +8,7 @@
 
 import UIKit
 
-@testable import UI_UnitTests_iOS
+@testable import UIUnitTestsIOS
 
 class AboutViewControllerMock: AboutViewController {
 
