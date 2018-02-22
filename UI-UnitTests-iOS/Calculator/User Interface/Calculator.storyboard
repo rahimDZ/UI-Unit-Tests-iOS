@@ -36,7 +36,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gaT-cF-mdj">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2i-M4-XnF" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2i-M4-XnF" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="FmF-1a-5Wf"/>
@@ -57,7 +57,7 @@
                                                     <action selector="numbersDidTouchUpInside:" destination="yUA-zP-pfX" eventType="touchUpInside" id="Nem-I0-QFy"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppD-K3-IuH" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppD-K3-IuH" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="80" y="0.0" width="50" height="50"/>
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,7 +74,7 @@
                                                     <action selector="numbersDidTouchUpInside:" destination="yUA-zP-pfX" eventType="touchUpInside" id="eK6-My-qSO"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if5-XY-8ta" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if5-XY-8ta" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="160" y="0.0" width="50" height="50"/>
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,7 +96,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UUX-iI-tjA">
                                         <rect key="frame" x="0.0" y="80" width="210" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1N-Ky-NyV" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1N-Ky-NyV" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="P1w-v8-4Lp"/>
@@ -117,7 +117,7 @@
                                                     <action selector="numbersDidTouchUpInside:" destination="yUA-zP-pfX" eventType="touchUpInside" id="iu3-Lo-8eA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sib-PO-3xO" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sib-PO-3xO" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="80" y="0.0" width="50" height="50"/>
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -134,7 +134,7 @@
                                                     <action selector="numbersDidTouchUpInside:" destination="yUA-zP-pfX" eventType="touchUpInside" id="Y8N-E3-Owj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmh-bP-3qH" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmh-bP-3qH" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="160" y="0.0" width="50" height="50"/>
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -156,7 +156,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mXT-eF-WkJ">
                                         <rect key="frame" x="0.0" y="160" width="210" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r6-Ay-wBx" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r6-Ay-wBx" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="p9S-Uc-L1h"/>
@@ -177,7 +177,7 @@
                                                     <action selector="numbersDidTouchUpInside:" destination="yUA-zP-pfX" eventType="touchUpInside" id="xU6-rY-4e5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-1T-HNv" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-1T-HNv" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="80" y="0.0" width="50" height="50"/>
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -194,7 +194,7 @@
                                                     <action selector="numbersDidTouchUpInside:" destination="yUA-zP-pfX" eventType="touchUpInside" id="Uq6-Jb-Nuc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-OT-KyX" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-OT-KyX" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="160" y="0.0" width="50" height="50"/>
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -216,7 +216,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SDW-2O-N6f">
                                         <rect key="frame" x="0.0" y="240" width="210" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvn-n5-Z44" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvn-n5-Z44" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="0nQ-0K-P6r"/>
@@ -237,7 +237,7 @@
                                                     <action selector="resetButtonDidTouchUpInside:" destination="yUA-zP-pfX" eventType="touchUpInside" id="BEQ-VC-1tg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-u0-Lw4" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-u0-Lw4" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="80" y="0.0" width="50" height="50"/>
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -254,7 +254,7 @@
                                                     <action selector="numbersDidTouchUpInside:" destination="yUA-zP-pfX" eventType="touchUpInside" id="fZM-0F-wqR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wne-Gj-yg1" customClass="CustomButton" customModule="UIUnitTestsIOS" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wne-Gj-yg1" customClass="CustomButton" customModule="UIUnitTestsIOS">
                                                 <rect key="frame" x="160" y="0.0" width="50" height="50"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -319,6 +319,7 @@
                     <connections>
                         <outlet property="additionButton" destination="wne-Gj-yg1" id="yoa-ig-fZG"/>
                         <outlet property="cancelButton" destination="yvn-n5-Z44" id="eqH-Rn-WAw"/>
+                        <outlet property="closeButton" destination="dfm-4b-4Gq" id="HOv-S7-YTE"/>
                         <outlet property="equalButton" destination="Lk8-D4-98T" id="LnO-Em-TBg"/>
                         <outlet property="promptLabel" destination="wtG-Y8-Ohe" id="0Sx-5t-7uT"/>
                         <outletCollection property="calculatorNumbersButtons" destination="X2i-M4-XnF" collectionClass="NSMutableArray" id="PwF-gr-26g"/>

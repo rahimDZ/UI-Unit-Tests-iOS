@@ -28,15 +28,4 @@ open class DashboardViewController: UIViewController {
         let aboutStoryboard = UIStoryboard(name: "About", bundle: Bundle(for: DashboardViewController.self))
         self.navigationController?.pushViewController(aboutStoryboard.instantiateViewController(withIdentifier: "AboutViewController"), animated: true)
     }
-    
-    open override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        if segue.identifier == "CalculatorSegueIdentifier", let destinationVC = segue.destination as? CalculatorViewController {
-            let interactor = CalculatorInteractor()
-            let presenter = CalculatorPresenter(interactor: interactor)
-            interactor.output = presenter
-            presenter.view = destinationVC
-            destinationVC.presenter = presenter
-        }
-    }
 }

@@ -8,8 +8,6 @@
 
 import UIKit
 
-@IBDesignable class CustomButton: UIButton {}
-
 extension UIView
 {
     @IBInspectable var borderWidth: CGFloat {

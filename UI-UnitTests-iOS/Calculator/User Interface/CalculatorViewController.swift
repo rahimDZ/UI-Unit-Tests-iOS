@@ -22,9 +22,14 @@ class CalculatorViewController: UIViewController
     
     @IBOutlet private(set) weak var equalButton: CustomButton?
     
+    @IBOutlet private(set) weak var closeButton: UIBarButtonItem?
+    
     // MARK: - Property
     
-    var presenter: CalculatorPresenterInput? = nil
+    lazy var presenter: CalculatorPresenterInput? = {
+        return initPresenter()
+    }()
+    
     var customAlertAction: CustomAlertActionInput {
         return CustomAlertAction()
     }
@@ -88,6 +93,14 @@ class CalculatorViewController: UIViewController
         alertController.addAction(confirmationAction)
         
         present(alertController, animated: true, completion: nil)
+    }
+    
+    func initPresenter() -> CalculatorPresenterInput {
+        let interactor = CalculatorInteractor()
+        let presenter = CalculatorPresenter(interactor: interactor)
+        interactor.output = presenter
+        presenter.view = self
+        return presenter
     }
 }
 

@@ -7,11 +7,20 @@
 //
 
 import Foundation
+
 @testable import UIUnitTestsIOS
 
 class CalculatorViewControllerMock: CalculatorViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func initPresenter() -> CalculatorPresenterInput {
+        let interactor = CalculatorInteractorMock()
+        let presenter = CalculatorPresenter(interactor: interactor)
+        interactor.output = presenter
+        presenter.view = self
+        return presenter
     }
 }
