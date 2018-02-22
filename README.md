@@ -24,8 +24,8 @@ The fact that those UI Tests are not using the Apple UI Tests but the simple Uni
 ## Why do we need a ViewControllerMock?
 
 - [`S.O.L.I.D` Principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), and more precisely the `D` of `S.O.L.I.D` : [Dependency Inversion Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
-- Mock Business Logic Layer to test only UI
-- Have access to the outlets and be able to test them.
+- Mock Business Logic Layer to test behaviors only on UI
+- Have access to the outlets and be able to test them, the outlets need to be ⚠️`private(set)`⚠️.
 - override some methods to be able to test it like `prepareForSegue`, the display of an alert error etc...
 - Add some methods only when testing to be able to declare some state like : success, server error and network error.
 Or an other example of state in the following scenario `when I access the dashboard and the server retrieve the color red, Then the label in the title must be colored in red`, for this example, we will create a new method on the viewcontrollerMock that will allow us to init the Business Logic with the color red and be able to test the scenario.
