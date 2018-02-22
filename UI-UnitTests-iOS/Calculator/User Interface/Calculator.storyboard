@@ -13,7 +13,7 @@
         <!--Calculator-->
         <scene sceneID="Nfv-oJ-i9z">
             <objects>
-                <viewController storyboardIdentifier="CalculatorViewControllerMock" title="Calculator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yUA-zP-pfX" userLabel="Calculator" customClass="CalculatorViewControllerMock" customModule="UIUnitTestsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculatorViewController" title="Calculator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yUA-zP-pfX" userLabel="Calculator" customClass="CalculatorViewController" customModule="UIUnitTestsIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="olf-fD-Aeg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

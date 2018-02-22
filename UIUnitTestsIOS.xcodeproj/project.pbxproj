@@ -12,6 +12,7 @@
 		AC143DDE2030A3EB00C2C6FF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143DDD2030A3EB00C2C6FF /* UIViewController+Extensions.swift */; };
 		AC143DE02030A40F00C2C6FF /* DashboardUIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143DDF2030A40F00C2C6FF /* DashboardUIElementsTests.swift */; };
 		AC143DE22030A43200C2C6FF /* DashboardUIBehaviorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143DE12030A43200C2C6FF /* DashboardUIBehaviorsTests.swift */; };
+		AC27FFC9203F73C5003241F5 /* CustomAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27FFC8203F73C5003241F5 /* CustomAlertAction.swift */; };
 		AC3364D42015306100966595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3364D32015306100966595 /* AppDelegate.swift */; };
 		AC3364D92015306100966595 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3364D72015306100966595 /* Dashboard.storyboard */; };
 		AC3364DB2015306100966595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3364DA2015306100966595 /* Assets.xcassets */; };
@@ -29,6 +30,11 @@
 		AC33651A2015393200966595 /* DashboardViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3365192015393200966595 /* DashboardViewControllerMock.swift */; };
 		AC352C452015FDD900FE3FAC /* CalculatorMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC352C442015FDD900FE3FAC /* CalculatorMock.storyboard */; };
 		AC352C472015FE2E00FE3FAC /* CalculatorViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC352C462015FE2E00FE3FAC /* CalculatorViewControllerMock.swift */; };
+		ACE14727203F4DA500784F8D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE14726203F4DA500784F8D /* UIView+Extension.swift */; };
+		ACE1472B203F54C600784F8D /* CalculatorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1472A203F54C600784F8D /* CalculatorInteractor.swift */; };
+		ACE1472D203F54F900784F8D /* CalculatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1472C203F54F900784F8D /* CalculatorPresenter.swift */; };
+		ACE1472F203F551F00784F8D /* CalculatorPresenterBoundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1472E203F551F00784F8D /* CalculatorPresenterBoundaries.swift */; };
+		ACE14731203F554F00784F8D /* CalculatorInteractorBoundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE14730203F554F00784F8D /* CalculatorInteractorBoundaries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,7 @@
 		AC143DDD2030A3EB00C2C6FF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		AC143DDF2030A40F00C2C6FF /* DashboardUIElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUIElementsTests.swift; sourceTree = "<group>"; };
 		AC143DE12030A43200C2C6FF /* DashboardUIBehaviorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUIBehaviorsTests.swift; sourceTree = "<group>"; };
+		AC27FFC8203F73C5003241F5 /* CustomAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertAction.swift; sourceTree = "<group>"; };
 		AC3364D02015306100966595 /* UIUnitTestsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIUnitTestsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3364D32015306100966595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3364D82015306100966595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
@@ -73,6 +80,11 @@
 		AC3365192015393200966595 /* DashboardViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerMock.swift; sourceTree = "<group>"; };
 		AC352C442015FDD900FE3FAC /* CalculatorMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalculatorMock.storyboard; sourceTree = "<group>"; };
 		AC352C462015FE2E00FE3FAC /* CalculatorViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewControllerMock.swift; sourceTree = "<group>"; };
+		ACE14726203F4DA500784F8D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		ACE1472A203F54C600784F8D /* CalculatorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorInteractor.swift; sourceTree = "<group>"; };
+		ACE1472C203F54F900784F8D /* CalculatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenter.swift; sourceTree = "<group>"; };
+		ACE1472E203F551F00784F8D /* CalculatorPresenterBoundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenterBoundaries.swift; sourceTree = "<group>"; };
+		ACE14730203F554F00784F8D /* CalculatorInteractorBoundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorInteractorBoundaries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				AC143DDD2030A3EB00C2C6FF /* UIViewController+Extensions.swift */,
+				ACE14726203F4DA500784F8D /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				AC3364DC2015306100966595 /* LaunchScreen.storyboard */,
+				AC27FFC8203F73C5003241F5 /* CustomAlertAction.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -197,8 +211,8 @@
 		AC3364FE201532B600966595 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				AC336503201532EA00966595 /* CalculatorViewController.swift */,
-				AC3364FF201532BE00966595 /* Calculator.storyboard */,
+				ACE14729203F54AB00784F8D /* User Interface */,
+				ACE14728203F54A500784F8D /* Business Logic */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -230,6 +244,26 @@
 				AC352C462015FE2E00FE3FAC /* CalculatorViewControllerMock.swift */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		ACE14728203F54A500784F8D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				ACE1472A203F54C600784F8D /* CalculatorInteractor.swift */,
+				ACE14730203F554F00784F8D /* CalculatorInteractorBoundaries.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		ACE14729203F54AB00784F8D /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AC336503201532EA00966595 /* CalculatorViewController.swift */,
+				AC3364FF201532BE00966595 /* Calculator.storyboard */,
+				ACE1472C203F54F900784F8D /* CalculatorPresenter.swift */,
+				ACE1472E203F551F00784F8D /* CalculatorPresenterBoundaries.swift */,
+			);
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 		B81CAAAF6382D5FD037941CC /* Pods */ = {
@@ -476,10 +510,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE1472B203F54C600784F8D /* CalculatorInteractor.swift in Sources */,
+				ACE14727203F4DA500784F8D /* UIView+Extension.swift in Sources */,
 				AC3364FB201530B800966595 /* AboutViewController.swift in Sources */,
+				ACE1472F203F551F00784F8D /* CalculatorPresenterBoundaries.swift in Sources */,
 				AC336504201532EA00966595 /* CalculatorViewController.swift in Sources */,
 				AC143DDE2030A3EB00C2C6FF /* UIViewController+Extensions.swift in Sources */,
 				AC3364D42015306100966595 /* AppDelegate.swift in Sources */,
+				ACE1472D203F54F900784F8D /* CalculatorPresenter.swift in Sources */,
+				AC27FFC9203F73C5003241F5 /* CustomAlertAction.swift in Sources */,
+				ACE14731203F554F00784F8D /* CalculatorInteractorBoundaries.swift in Sources */,
 				AC336511201538B000966595 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
