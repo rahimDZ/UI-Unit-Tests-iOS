@@ -275,7 +275,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtG-Y8-Ohe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wtG-Y8-Ohe">
                                 <rect key="frame" x="180" y="123" width="15.5" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -310,6 +310,7 @@
                             <constraint firstItem="Yec-rn-tY8" firstAttribute="leading" secondItem="fda-aa-G3f" secondAttribute="leading" id="Sen-UV-gWu"/>
                             <constraint firstItem="Lk8-D4-98T" firstAttribute="leading" secondItem="SDW-2O-N6f" secondAttribute="leading" id="VIo-z3-ZWq"/>
                             <constraint firstItem="Lk8-D4-98T" firstAttribute="height" secondItem="yvn-n5-Z44" secondAttribute="height" id="aaj-Yn-AhF"/>
+                            <constraint firstItem="fda-aa-G3f" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wtG-Y8-Ohe" secondAttribute="trailing" constant="20" id="mpX-fJ-X1e"/>
                             <constraint firstItem="wtG-Y8-Ohe" firstAttribute="centerX" secondItem="fda-aa-G3f" secondAttribute="centerX" id="v0a-df-J4J"/>
                             <constraint firstItem="wtG-Y8-Ohe" firstAttribute="top" secondItem="fda-aa-G3f" secondAttribute="top" constant="103" id="v2B-uR-LvD"/>
                         </constraints>

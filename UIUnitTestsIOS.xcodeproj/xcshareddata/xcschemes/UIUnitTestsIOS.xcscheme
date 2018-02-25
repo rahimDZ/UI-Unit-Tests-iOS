@@ -39,6 +39,17 @@
                BlueprintName = "UIUnitTestsIOSTests"
                ReferencedContainer = "container:UIUnitTestsIOS.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "DashboardUIBehaviorsTests">
+               </Test>
+               <Test
+                  Identifier = "DashboardUIElementsTests">
+               </Test>
+               <Test
+                  Identifier = "UI_UnitTests_iOSTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

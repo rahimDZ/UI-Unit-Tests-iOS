@@ -81,7 +81,7 @@ class CalculatorViewController: UIViewController
     func displayPopupAlert(title: String, message: String, confirmationTitle: String, cancelTitle: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
-        let confirmationAction = customAlertAction.actionWithTitle(cancelTitle, style: .default) { _ -> Void in
+        let confirmationAction = customAlertAction.actionWithTitle(confirmationTitle, style: .default) { _ -> Void in
             self.confirmReset()
         }
 

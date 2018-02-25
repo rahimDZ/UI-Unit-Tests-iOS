@@ -22,5 +22,6 @@ protocol CalculatorInteractorOutput: class
     func updateNumber(_ number: Int)
     func showConfirmationResetPopupAlert()
     func showResult(_ result: Int)
+    func showResultOverflow()
     func showReset()
 }

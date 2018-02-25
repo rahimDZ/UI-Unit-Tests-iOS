@@ -59,6 +59,10 @@ extension CalculatorPresenter: CalculatorInteractorOutput
         view?.display("\(result)")
     }
     
+    func showResultOverflow() {
+        view?.display("1e48")
+    }
+    
     func showReset() {
         view?.display("0")
     }

@@ -16,7 +16,7 @@ class CalculatorInteractor
     private var number1: Int? = nil
     private var number2: Int? = nil
     private var result: Int = 0
-    private var isAdditioning = false
+    private var isEqualDone = false
     
     init() { }
 }
@@ -27,14 +27,24 @@ extension CalculatorInteractor: CalculatorInteractorInput
 {
     func get(number: Int) {
         cumul += "\(number)"
-        result = Int(cumul) ?? 0
-        output?.updateNumber(result)
+        if let nbr = Int(cumul) {
+            output?.updateNumber(nbr)
+        } else {
+            cumul.removeLast()
+        }
     }
     
     func add() {
-        isAdditioning = true
-        number1 = result
+        number2 = nil
+        if number1 == nil {
+            number1 = Int(cumul)
+        } else {
+            number2 = Int(cumul)
+        }
         cumul = ""
+        if number1 != nil && number2 != nil {
+            equal()
+        }
     }
     
     func confirmReset() {
@@ -42,7 +52,7 @@ extension CalculatorInteractor: CalculatorInteractorInput
         result = 0
         number1 = nil
         number2 = nil
-        isAdditioning = false
+        isEqualDone = false
         output?.showReset()
     }
     
@@ -51,15 +61,27 @@ extension CalculatorInteractor: CalculatorInteractorInput
     }
     
     func equal() {
-        if result > 0 && isAdditioning == false {
-            result += number2 ?? 0
-        } else {
+        if number1 == nil && !cumul.isEmpty {
+            number1 = Int(cumul)
+            cumul = ""
+        }
+        if number1 != nil && (number2 == nil || !cumul.isEmpty) {
             number2 = Int(cumul)
-            if let number1 = number1, let number2 = number2 {
-                isAdditioning = false
+            cumul = ""
+        }
+        if let number1 = number1, let number2 = number2 {
+            if number1.addingReportingOverflow(number2).overflow == true {
+                result = Int.max
+                self.number1 = result
+                output?.showResultOverflow()
+                return
+            } else {
                 result = number1 + number2
             }
+        } else {
+            result = number1 ?? 0
         }
         output?.showResult(result)
+        self.number1 = result
     }
 }
