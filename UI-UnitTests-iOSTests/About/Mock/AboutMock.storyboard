@@ -13,7 +13,7 @@
         <!--About-->
         <scene sceneID="RDk-xH-uwa">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" title="About page" useStoryboardIdentifierAsRestorationIdentifier="YES" id="otj-iE-JSw" userLabel="About" customClass="AboutViewController" customModule="UIUnitTestsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewControllerMock" title="About page" useStoryboardIdentifierAsRestorationIdentifier="YES" id="otj-iE-JSw" userLabel="About" customClass="AboutViewControllerMock" customModule="UIUnitTestsIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BvT-1m-m8H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

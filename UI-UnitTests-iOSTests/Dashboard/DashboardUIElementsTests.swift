@@ -22,7 +22,8 @@ final class DashboardUIElementsTests: QuickSpec {
             context("All UI Elements are valid") {
                 beforeEach {
                     self.dashboardViewControllerMock = DashboardViewControllerMock.fromStoryboard(named: "DashboardMock")
-                    
+                    self.dashboardViewControllerMock?.view.layoutSubviews()
+
                     // To be able to retrieve custom fonts
                     let fileManager = FileManager.default
                     let bundleURL = Bundle(for: DashboardViewControllerMock.self).bundleURL
@@ -53,13 +54,13 @@ final class DashboardUIElementsTests: QuickSpec {
                         
                     }
                 }
-                context("the Sign In / Sign Up stackView") {
+                context("the centred stackView") {
                     it("should have valid constraints") {
-                        expect(self.dashboardViewControllerMock?.aboutHorizontalCenterConstraint?.constant).toEventually(equal(0.0))
-                        expect(self.dashboardViewControllerMock?.aboutVerticalCenterConstraint?.constant).toEventually(equal(0.0))
+                        expect(self.dashboardViewControllerMock?.stackViewHorizontalCenterConstraint?.constant).toEventually(equal(0.0))
+                        expect(self.dashboardViewControllerMock?.stackViewVerticalCenterConstraint?.constant).toEventually(equal(0.0))
                     }
                     it("should have valid spacings") {
-                        expect(self.dashboardViewControllerMock?.aboutStackView?.spacing).toEventually(equal(100.0))
+                        expect(self.dashboardViewControllerMock?.stackView?.spacing).toEventually(equal(100.0))
                     }
                 }
             }

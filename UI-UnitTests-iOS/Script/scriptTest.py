@@ -61,9 +61,10 @@ def updateStoryboardForModule(module):
 
 # Need to Update the current enum to add your viewControllers to be mocked and launch `updateStoryboardForModule`
 class ModulesNames(Enum):
-    Dashboard = ["DashboardViewController", "Calculator"]
+    Dashboard = ["DashboardViewController", "Calculator", "HumorFaces"]
     Calculator = ["CalculatorViewController"]
     About = ["AboutViewController"]
+    HumorFaces = ["HumorFacesViewController"]
     
     def getKey(self):
         return self.name
@@ -76,5 +77,8 @@ updateStoryboardForModule(ModulesNames.Calculator)
 
 print "About module refreshing..."
 updateStoryboardForModule(ModulesNames.About)
+
+print "HumorFaces module refreshing..."
+updateStoryboardForModule(ModulesNames.HumorFaces)
 
 

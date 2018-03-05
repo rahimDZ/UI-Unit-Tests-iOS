@@ -8,17 +8,66 @@
 
 import Foundation
 
+fileprivate enum CalculationOperator
+{
+    case addition
+    case none
+}
+
 class CalculatorInteractor
 {
+    private var calculationOperator: CalculationOperator = .none {
+        didSet {
+            if calculationOperator != .none {
+                if number1 == nil {
+                    number1 = Int(cumul)
+                } else {
+                    number2 = Int(cumul)
+                }
+                cumul = ""
+                if number1 != nil && number2 != nil {
+                    equal()
+                }
+            }
+        }
+    }
     weak var output: CalculatorInteractorOutput? = nil
     
-    private var cumul: String = ""
+    private var cumul: String = "" {
+        didSet {
+            if let nbr = Int(cumul) {
+                output?.updateNumber(nbr)
+            } else {
+                if !cumul.isEmpty {
+                    cumul.removeLast()
+                }
+            }
+        }
+    }
     private var number1: Int? = nil
     private var number2: Int? = nil
-    private var result: Int = 0
+    private var result: Int {
+        if let number1 = number1, let number2 = number2 {
+            switch calculationOperator
+            {
+            case .addition: return add(number1, with: number2)
+            case .none: return 0
+            }
+        } else {
+            return number1 ?? 0
+        }
+    }
     private var isEqualDone = false
     
     init() { }
+    
+    private func add(_ number1: Int, with number2: Int) -> Int {
+        if number1.addingReportingOverflow(number2).overflow == true {
+            return Int.max
+        } else {
+            return number1 + number2
+        }
+    }
 }
 
 // MARK: - Interactor Input
@@ -27,29 +76,14 @@ extension CalculatorInteractor: CalculatorInteractorInput
 {
     func get(number: Int) {
         cumul += "\(number)"
-        if let nbr = Int(cumul) {
-            output?.updateNumber(nbr)
-        } else {
-            cumul.removeLast()
-        }
     }
     
     func add() {
-        number2 = nil
-        if number1 == nil {
-            number1 = Int(cumul)
-        } else {
-            number2 = Int(cumul)
-        }
-        cumul = ""
-        if number1 != nil && number2 != nil {
-            equal()
-        }
+        calculationOperator = .addition
     }
     
     func confirmReset() {
         cumul = ""
-        result = 0
         number1 = nil
         number2 = nil
         isEqualDone = false
@@ -69,19 +103,11 @@ extension CalculatorInteractor: CalculatorInteractorInput
             number2 = Int(cumul)
             cumul = ""
         }
-        if let number1 = number1, let number2 = number2 {
-            if number1.addingReportingOverflow(number2).overflow == true {
-                result = Int.max
-                self.number1 = result
-                output?.showResultOverflow()
-                return
-            } else {
-                result = number1 + number2
-            }
-        } else {
-            result = number1 ?? 0
+        if result == Int.max {
+            output?.showResultOverflow()
+            return
         }
         output?.showResult(result)
-        self.number1 = result
+        number1 = result
     }
 }

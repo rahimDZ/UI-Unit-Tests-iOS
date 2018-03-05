@@ -13,7 +13,6 @@ extension UIViewController
     class func fromStoryboard<T: UIViewController>(named storyboardName: String) -> T? {
         let storyboard = UIStoryboard(name: storyboardName, bundle: Bundle(for: T.self))
         let vc = storyboard.instantiateViewController(withIdentifier: String(describing: T.self)) as? T
-        vc?.view.layoutSubviews()
         return vc
     }
 }

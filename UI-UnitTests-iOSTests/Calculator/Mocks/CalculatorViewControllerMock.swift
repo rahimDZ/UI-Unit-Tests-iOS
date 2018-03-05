@@ -29,7 +29,7 @@ class CalculatorViewControllerMock: CalculatorViewController {
     }
     
     // We override this method to be able to mock the interactor which is the business logic part
-    override func initPresenter() -> CalculatorPresenterInput {
+    override func initCalculatorPresenter() -> CalculatorPresenterInput? {
         let interactor = CalculatorInteractorMock()
         let presenter = CalculatorPresenter(interactor: interactor)
         interactor.output = presenter

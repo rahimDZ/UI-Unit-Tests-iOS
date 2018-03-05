@@ -16,13 +16,16 @@ import UIKit
 class DashboardViewControllerMock: DashboardViewController {
     
     public var didDisplaysLoginViewController: Bool = false
-    public var calculatorViewController: UIViewController? = nil
+    public var didDisplaysHumorFacesViewController: Bool = false
+    public var destinationViewController: UIViewController? = nil
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if segue.identifier == "CalculatorSegueIdentifier" {
             didDisplaysLoginViewController = true
-            calculatorViewController = segue.destination
+        } else if segue.identifier == "HumorFacesSegueIdentifier" {
+            didDisplaysHumorFacesViewController = true
         }
+        destinationViewController = segue.destination
     }
 }

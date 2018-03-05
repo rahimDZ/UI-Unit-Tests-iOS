@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eee-ZS-ukU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Humor Faces View Controller-->
+        <scene sceneID="Mzt-mZ-Pv6">
+            <objects>
+                <viewController storyboardIdentifier="HumorFacesViewControllerMock" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eee-ZS-ukU" customClass="HumorFacesViewControllerMock" customModule="UIUnitTestsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EgS-dn-GgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QgC-ZU-xCO">
+                                <rect key="frame" x="23.5" y="158" width="328" height="291"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkq-Cs-AVF">
+                                        <rect key="frame" x="120" y="0.0" width="88" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Cv9-t2-XcX">
+                                        <rect key="frame" x="44" y="40.5" width="240" height="200.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Cv9-t2-XcX" secondAttribute="height" multiplier="6:5" id="czX-m6-wcX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4P0-Y3-4eB">
+                                        <rect key="frame" x="0.0" y="261" width="328" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1J-RC-9EU">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Happy">
+                                                    <color key="titleColor" red="0.0" green="0.97647058823529409" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="happyFaceButtonDidTouchUpInside:" destination="eee-ZS-ukU" eventType="touchUpInside" id="ltd-2s-ZQK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtb-UM-jjN">
+                                                <rect key="frame" x="87" y="0.0" width="67" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Sad">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sadFaceButtonDidTouchUpInside:" destination="eee-ZS-ukU" eventType="touchUpInside" id="x2x-TM-G6Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeS-ai-Qk7">
+                                                <rect key="frame" x="174" y="0.0" width="67" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Angry">
+                                                    <color key="titleColor" red="1" green="0.14901960784313725" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="angryFaceButtonDidTouchUpInside:" destination="eee-ZS-ukU" eventType="touchUpInside" id="lae-w8-G2O"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULV-GU-g4w">
+                                                <rect key="frame" x="261" y="0.0" width="67" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Surprised">
+                                                    <color key="titleColor" red="1" green="0.83137254901960778" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="surprisedFaceButtonDidTouchUpInside:" destination="eee-ZS-ukU" eventType="touchUpInside" id="hxm-Qo-dr8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pM-3Y-0sV">
+                                <rect key="frame" x="154" y="479" width="67" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="curious"/>
+                                <connections>
+                                    <action selector="curiousFaceButtonDidTouchUpInside:" destination="eee-ZS-ukU" eventType="touchUpInside" id="CyO-j5-fro"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5pM-3Y-0sV" firstAttribute="width" secondItem="Qtb-UM-jjN" secondAttribute="width" id="LPC-35-Nv5"/>
+                            <constraint firstItem="QgC-ZU-xCO" firstAttribute="centerX" secondItem="Imp-pO-caC" secondAttribute="centerX" id="P1Z-Qd-cym"/>
+                            <constraint firstItem="5pM-3Y-0sV" firstAttribute="top" secondItem="4P0-Y3-4eB" secondAttribute="bottom" constant="30" id="dPk-oP-00d"/>
+                            <constraint firstItem="Cv9-t2-XcX" firstAttribute="height" secondItem="EgS-dn-GgJ" secondAttribute="height" multiplier="0.3" id="jGz-9I-YZl"/>
+                            <constraint firstItem="QgC-ZU-xCO" firstAttribute="centerY" secondItem="Imp-pO-caC" secondAttribute="centerY" constant="-40" id="qN5-Qe-r5J"/>
+                            <constraint firstItem="5pM-3Y-0sV" firstAttribute="centerX" secondItem="Imp-pO-caC" secondAttribute="centerX" id="uVd-fC-H7w"/>
+                            <constraint firstItem="5pM-3Y-0sV" firstAttribute="height" secondItem="Qtb-UM-jjN" secondAttribute="height" id="wi0-z2-Ku1"/>
+                            <constraint firstItem="Imp-pO-caC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QgC-ZU-xCO" secondAttribute="trailing" constant="20" id="wlj-g9-8u1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Imp-pO-caC"/>
+                    </view>
+                    <connections>
+                        <outlet property="angryFaceButton" destination="SeS-ai-Qk7" id="iIE-11-BWe"/>
+                        <outlet property="curiousFaceButton" destination="5pM-3Y-0sV" id="k5u-5P-X9y"/>
+                        <outlet property="happyFaceButton" destination="t1J-RC-9EU" id="HBQ-IO-aqv"/>
+                        <outlet property="humorDescriptionLabel" destination="jkq-Cs-AVF" id="EI1-6I-vm8"/>
+                        <outlet property="humorFaceImageView" destination="Cv9-t2-XcX" id="grt-B5-BlW"/>
+                        <outlet property="sadFaceButton" destination="Qtb-UM-jjN" id="ZyF-uA-3fX"/>
+                        <outlet property="surprisedFaceButton" destination="ULV-GU-g4w" id="jc8-yy-BrB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDS-rM-iAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252" y="181"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="320" height="320"/>
+    </resources>
+</document>

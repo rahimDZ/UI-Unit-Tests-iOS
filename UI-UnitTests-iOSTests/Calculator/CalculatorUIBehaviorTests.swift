@@ -55,6 +55,7 @@ final class CalculatorUIBehaviorTests: QuickSpec {
         describe("GIVEN I tap the number 1") {
             beforeEach {
                 self.calculatorViewControllerMock = CalculatorViewControllerMock.fromStoryboard(named: "CalculatorMock")
+                self.calculatorViewControllerMock?.view.layoutSubviews()
                 let numberOneButton = (self.calculatorViewControllerMock?.calculatorNumbersButtons?.filter { $0.tag == 1 })?.first
                 numberOneButton?.sendActions(for: .touchUpInside)
             }
@@ -79,6 +80,7 @@ final class CalculatorUIBehaviorTests: QuickSpec {
         describe("GIVEN that I calculate 2 plus 2") {
             beforeEach {
                 self.calculatorViewControllerMock = CalculatorViewControllerMock.fromStoryboard(named: "CalculatorMock")
+                self.calculatorViewControllerMock?.view.layoutSubviews()
                 let numberTwoButton = (self.calculatorViewControllerMock?.calculatorNumbersButtons?.filter { $0.tag == 2 })?.first
                 numberTwoButton?.sendActions(for: .touchUpInside)
                 self.calculatorViewControllerMock?.additionButton?.sendActions(for: .touchUpInside)
@@ -242,11 +244,11 @@ final class CalculatorUIBehaviorTests: QuickSpec {
                 self.calculatorViewControllerMock = CalculatorViewControllerMock.fromStoryboard(named: "CalculatorMock")
                 UIApplication.shared.keyWindow?.rootViewController = self.calculatorViewControllerMock
                 let numberNineButton = (self.calculatorViewControllerMock?.calculatorNumbersButtons?.filter { $0.tag == 9 })?.first
-                for _ in 0...18 {
+                for _ in 0...22 {
                     numberNineButton?.sendActions(for: .touchUpInside)
                 }
                 self.calculatorViewControllerMock?.additionButton?.sendActions(for: .touchUpInside)
-                for _ in 0...18 {
+                for _ in 0...22 {
                     numberNineButton?.sendActions(for: .touchUpInside)
                 }
             }

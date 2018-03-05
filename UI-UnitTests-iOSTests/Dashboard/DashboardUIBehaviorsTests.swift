@@ -22,6 +22,7 @@ final class DashboardUIBehaviorsTests: QuickSpec {
         describe("When I access Dashboard Page") {
             beforeEach {
                 self.dashboardViewControllerMock = DashboardViewControllerMock.fromStoryboard(named: "DashboardMock")
+                self.dashboardViewControllerMock?.view.layoutSubviews()
                 self.navigationController = UINavigationController(rootViewController: self.dashboardViewControllerMock!)
             }
             // from segue on storyboard
@@ -31,13 +32,23 @@ final class DashboardUIBehaviorsTests: QuickSpec {
                 }
                 it("should display Calculator page") {
                     expect(self.dashboardViewControllerMock?.didDisplaysLoginViewController).toEventually(beTrue())
-                    expect(self.dashboardViewControllerMock?.calculatorViewController).toNotEventually(beNil())
+                    expect(self.dashboardViewControllerMock?.destinationViewController).toNotEventually(beNil())
                 }
                 it("should display Calculator page with modal presentation") {
-                    expect(self.dashboardViewControllerMock?.calculatorViewController?.modalPresentationStyle).toEventually(equal(UIModalPresentationStyle.fullScreen))
+                    expect(self.dashboardViewControllerMock?.destinationViewController?.modalPresentationStyle).toEventually(equal(UIModalPresentationStyle.fullScreen))
                 }
                 it("should diplay Calculator page with cross disolve transition style") {
-                    expect(self.dashboardViewControllerMock?.calculatorViewController?.modalTransitionStyle).toEventually(equal(UIModalTransitionStyle.crossDissolve))
+                    expect(self.dashboardViewControllerMock?.destinationViewController?.modalTransitionStyle).toEventually(equal(UIModalTransitionStyle.crossDissolve))
+                }
+            }
+            context("And the user clicks on the Humor Faces Button") {
+                beforeEach {
+                    self.dashboardViewControllerMock?.humorFacesButton?.sendActions(for: .touchUpInside)
+                }
+                it("should display Humor Faces page") {
+                    expect(self.dashboardViewControllerMock?.didDisplaysHumorFacesViewController).toEventually(beTrue())
+                    expect(self.dashboardViewControllerMock?.destinationViewController).toNotEventually(beNil())
+                    expect((self.navigationController?.viewControllers.contains(where: { return $0 is HumorFacesViewController }))).toEventually(beTrue())
                 }
             }
             // from button action programatically

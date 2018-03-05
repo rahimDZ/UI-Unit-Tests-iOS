@@ -27,7 +27,7 @@ class CalculatorViewController: UIViewController
     // MARK: - Property
     
     lazy var presenter: CalculatorPresenterInput? = {
-        return initPresenter()
+        return initCalculatorPresenter()
     }()
     
     var customAlertAction: CustomAlertActionInput {
@@ -95,7 +95,7 @@ class CalculatorViewController: UIViewController
         present(alertController, animated: true, completion: nil)
     }
     
-    func initPresenter() -> CalculatorPresenterInput {
+    func initCalculatorPresenter() -> CalculatorPresenterInput? {
         let interactor = CalculatorInteractor()
         let presenter = CalculatorPresenter(interactor: interactor)
         interactor.output = presenter

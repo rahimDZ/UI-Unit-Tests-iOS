@@ -18,9 +18,10 @@ open class DashboardViewController: UIViewController {
     
     @IBOutlet private(set) weak var aboutButton: UIButton?
     @IBOutlet private(set) weak var calculatorButton: UIButton?
-    @IBOutlet private(set) weak var aboutStackView: UIStackView?
-    @IBOutlet private(set) weak var aboutHorizontalCenterConstraint: NSLayoutConstraint?
-    @IBOutlet private(set) weak var aboutVerticalCenterConstraint: NSLayoutConstraint?
+    @IBOutlet private(set) weak var humorFacesButton: UIButton?
+    @IBOutlet private(set) weak var stackView: UIStackView?
+    @IBOutlet private(set) weak var stackViewHorizontalCenterConstraint: NSLayoutConstraint?
+    @IBOutlet private(set) weak var stackViewVerticalCenterConstraint: NSLayoutConstraint?
 
     // MARK: - Actions
     
