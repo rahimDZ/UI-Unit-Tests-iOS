@@ -1,5 +1,5 @@
 # UI UnitTests iOS
-A new way to test your UI very quicly with unit tests by mocking the Business logic.
+A new way to test your UI very quickly with unit tests by mocking the Business logic.
 This new way use a storyboard generator that mock the storyboard and replacing a mocked viewcontroller that inherit from the viewcontroller that you want to test.
 
 - [Code Coverage](#code-coverage)
@@ -30,7 +30,7 @@ The fact that those UI Tests are not using the Apple UI Tests but the simple Uni
 - Add some methods only when testing to be able to declare some state like : success, server error and network error.
 Or an other example of state in the following scenario `when I access the dashboard and the server retrieve the color red, Then the label in the title must be colored in red`, for this example, we will create a new method on the viewcontrollerMock that will allow us to init the Business Logic with the color red and be able to test the scenario.
 
-⚠️⚠️⚠️ Please see an example [here](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/UI-UnitTests-iOSTests/Dashboard/DashboardViewControllerMock.swift) ⚠️⚠️⚠️
+⚠️⚠️⚠️ Please see an example [here](https://github.com/rahimDZ/UI-Unit-Tests-iOS/blob/master/UI-UnitTests-iOSTests/HumorFaces/Mock/HumorFacesViewControllerMock.swift) ⚠️⚠️⚠️
 
 
 ## Python Script Generator
