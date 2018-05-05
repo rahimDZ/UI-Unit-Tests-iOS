@@ -7,13 +7,13 @@ def pods_for_unit_tests
     pod 'Quick'
 end
 
-target 'UI-UnitTests-iOS' do
+target 'UIUnitTestsIOS' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for UI-UnitTests-iOS
 
-  target 'UI-UnitTests-iOSTests' do
+  target 'UIUnitTestsIOSTests' do
     inherit! :search_paths
     pods_for_unit_tests
   end
